@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Images
@@ -23,13 +25,14 @@ class Images
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank()
      * @ORM\Column(name="fileName", type="string", length=255)
      */
     private $fileName;
 
 
     /**
+     * @JMS\Exclude()
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Albums", inversedBy="images")
      */
     private $album;

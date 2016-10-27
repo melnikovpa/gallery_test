@@ -1,3 +1,7 @@
+pm_api:
+    resource: "@PMApiBundle/Controller/"
+    type:   annotation
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

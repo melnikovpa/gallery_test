@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Albums
@@ -23,7 +25,7 @@ class Albums
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank()
      * @ORM\Column(name="name", type="string", length=100)
      */
     private $name;
@@ -36,6 +38,7 @@ class Albums
     private $description;
 
     /**
+     * @JMS\MaxDepth(1)
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Images", mappedBy="album", cascade={"persist"})
      */
     private $images;
