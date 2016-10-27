@@ -1,0 +1,29 @@
+AppBundle\Entity\Albums:
+    album1:
+        name: First album with 5 images
+        description: test description
+    album2:
+        name: Album Serg
+    album3:
+        name: Album Angelika
+    album4:
+        name: Album Liubov
+    album5:
+        name: Album Pavel
+
+AppBundle\Entity\Images:
+    images{1..5}:
+      album: '@album1'
+      fileName: '<randomPhoto()>'
+    images{6..30}:
+      album: '@album2'
+      fileName: '<randomPhoto()>'
+    images{30..55}:
+      album: '@album3'
+      fileName: '<randomPhoto()>'
+    images{55..83}:
+      album: '@album4'
+      fileName: '<randomPhoto()>'
+    images{83..105}:
+      album: '@album5'
+      fileName: '<randomPhoto()>'
