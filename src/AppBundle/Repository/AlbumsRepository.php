@@ -12,4 +12,31 @@ use Doctrine\ORM\EntityRepository;
  */
 class AlbumsRepository extends EntityRepository
 {
+
+    public function getAlbums()
+    {
+        $sql = "
+            SELECT
+              al.*,
+              substring_index(
+                  (
+                    SELECT GROUP_CONCAT(img.fileName SEPARATOR ',')
+                    FROM (
+                           SELECT *
+                           FROM images
+                         ) img
+                    WHERE img.album_id = al.id
+                  ),
+              ',', 10) as photos
+            FROM albums al
+        ";
+
+        $stmt = $this->getEntityManager()
+                     ->getConnection()
+                     ->prepare($sql);
+
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
 }

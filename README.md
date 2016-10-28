@@ -59,4 +59,82 @@ I use:
 
 <p>
 
+    [
+      {
+        "id": "1",
+        "name": "First album with 5 images",
+        "description": "test description",
+        "photos": [
+          "DSC_0249.jpg",
+          "DSC_6857.jpg",
+          "DSC_6824.jpg",
+          "DSC_6857_th.jpg",
+          "DSC_6590_th.jpg"
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Album Serg",
+        "photos": [
+          "DSC_2057m_th.jpg",
+          "DSC_2057m_th.jpg",
+          "DSC_6857.jpg",
+          "DSC_4384.jpg",
+          "DSC_0876.jpg",
+          "DSC_6494.jpg",
+          "DSC_4351_th.jpg",
+          "DSC_0850.jpg",
+          "DSC_4321.jpg",
+          "DSC_0358.jpg"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Album Angelika",
+        "photos": [
+          "DSC_2940_th.jpg",
+          "DSC_0845_th.jpg",
+          "DSC_0397_th.jpg",
+          "DSC_0021.jpg",
+          "DSC_4321_th.jpg",
+          "DSC_2870_th.jpg",
+          "DSC_0034_th.jpg",
+          "DSC_2870.jpg",
+          "DSC_0450.jpg",
+          "DSC_0871_th.jpg"
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Album Liubov",
+        "photos": [
+          "DSC_4258.jpg",
+          "DSC_6494_th.jpg",
+          "DSC_2940_th.jpg",
+          "DSC_0339_th.jpg",
+          "DSC_8125_th.jpg",
+          "DSC_0261.jpg",
+          "DSC_0450_th.jpg",
+          "DSC_4607.jpg",
+          "DSC_2132.jpg",
+          "DSC_0021_th.jpg"
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Album Pavel",
+        "photos": [
+          "DSC_0261_th.jpg",
+          "DSC_6494.jpg",
+          "DSC_0249.jpg",
+          "DSC_6590_th.jpg",
+          "DSC_4399.jpg",
+          "DSC_0261.jpg",
+          "DSC_4145.jpg",
+          "DSC_0934_th.jpg",
+          "DSC_0934_th.jpg",
+          "DSC_0876_th.jpg"
+        ]
+      }
+    ]
 </p>

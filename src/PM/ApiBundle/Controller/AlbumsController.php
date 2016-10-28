@@ -20,7 +20,15 @@ class AlbumsController extends Controller
      */
     public function albumAction(Request $request)
     {
+        $albums =  $this->getDoctrine()->getRepository(Albums::class)->getAlbums();
 
+        if(!empty($albums)) {
+            foreach ($albums as &$album) {
+                $album['photos'] = explode(',', $album['photos']);
+            }
+        }
+
+        return $albums;
     }
 
     /**
